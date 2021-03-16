@@ -68,6 +68,10 @@ nav ul li a{
     color: rgb(12, 25, 54);
 }
 
+nav ul li a:hover{
+    color: rgb(219, 43, 43);
+}
+
 .connect{
     display: flex;
     width: 30%;
@@ -85,12 +89,18 @@ nav ul li a{
 #request{
     padding: 10px;
     width: 40%;
-    border: 1px solid red;
-    color: red;
+    border: 1px solid rgb(219, 43, 43);
+    color: rgb(219, 43, 43);
     background: none;
     outline: none;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 700;
+    cursor: pointer;
+}
+
+#request:hover{
+    background: rgb(219, 43, 43);
+    color: #fff;
 }
 /* end of header styles */
