@@ -103,4 +103,123 @@ nav ul li a:hover{
     background: rgb(219, 43, 43);
     color: #fff;
 }
+
+.toggle {
+    float: right;
+    font-size: 12px;
+    cursor: pointer;
+    background: rgb(12, 25, 54);
+    color: #fff;
+    padding: 10px;
+    display: none;
+}
+
+.toggle i {
+    font-size: 1.2rem;
+}
+/* responsive header */
+
+@media screen and (max-width: 991px){
+    header{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .logo{
+        width: 30%;
+    }
+    .logo img{
+        max-width: 100%;
+    }
+    
+    
+    nav{
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgb(219, 43, 43);
+        padding: 20px;
+        position: absolute;
+        top: 24%;
+        left: 10%;
+        /* display: none; */
+    }
+
+    nav.active{
+        display: none;
+        transition: 0.5s;
+    }
+    
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    nav ul li{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav ul li a{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-decoration: none;
+        color: rgb(12, 25, 54);
+        padding-top: 15px;
+    }
+    
+    nav ul li a:hover{
+        color: rgb(219, 43, 43);
+    }
+    
+    .connect{
+        display: flex;
+        width: 100%;
+        margin-top: 70px;
+    }
+    
+    .connect a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: rgb(12, 25, 54);
+    }
+    
+    #request{
+        padding: 10px;
+        width: 40%;
+        border: 1px solid rgb(219, 43, 43);
+        color: rgb(219, 43, 43);
+        background: none;
+        outline: none;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    #request:hover{
+        background: rgb(219, 43, 43);
+        color: #fff;
+    }
+
+    .toggle {
+        display: block;
+        position: absolute;
+        top: 15%;
+    }
+    
+    .toggle i {
+        font-size: 1.2rem;
+    }
+}
 /* end of header styles */
