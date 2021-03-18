@@ -17,6 +17,15 @@ body{
     overflow-x: hidden;
 }
 
+.hero{
+    background: url(../asset/img/intro.jpg);
+    background-size: 1800px 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
 /* header  styles*/
 
 header{
@@ -223,3 +232,99 @@ nav ul li a:hover{
     }
 }
 /* end of header styles */
+
+/* into styles */
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    padding: 90px;
+    margin-top: 30px;
+    width: 50%;
+}
+
+.intro h3{
+    display: flex;
+    font-size: 2.5rem;
+    width: 100%;
+    flex-direction: column;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    color: rgb(12, 25, 54);
+    transform: scale(1, 1.3);
+}
+
+.intro h3 span{
+    color: rgb(219, 43, 43);
+}
+
+.intro p{
+    margin-top: 50px;
+    display: flex;
+    font-weight: 300;
+    font-size: 1rem;
+    width: 80%;
+    opacity: .5;
+}
+
+.intro-btn{
+    margin-top: 30px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+    background: rgb(228, 16, 16);
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgb(235, 181, 181);
+}
+
+.intro-btn:hover{
+    box-shadow: none;
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 991px){
+    .intro{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .intro h3{
+        font-size: 1.6rem;
+        width: 80%;
+    }
+    
+    .intro p{
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .intro-btn{
+        margin-top: 30px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 18px;
+        justify-content: center;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        font-weight: 700;
+        color: #fff;
+        background: rgb(219, 43, 43);
+        cursor: pointer;
+    }
+}
+/* end of intro styles */
