@@ -11,6 +11,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+span,b{
+    color: rgb(219, 43, 43);
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -328,3 +332,116 @@ nav ul li a:hover{
     }
 }
 /* end of intro styles */
+
+/* partners styles */
+
+.partners{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px;
+    margin-top: 50px;
+}
+
+.partners h3{
+    display: flex;
+    font-size: 2rem;
+    color: rgb(12, 25, 54);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+} 
+
+.partners h3 b{
+    margin-right: 10px;
+}
+
+.partners p{
+    margin-top: 30px;
+    opacity: .5;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-images{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.p-images hr{
+    font-weight: 900;
+    opacity: .3;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img{
+    display: flex;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 991px){
+    .partners{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 50px;
+        margin-top: 70px;
+    }
+    
+    .partners h3{
+        display: flex;
+        font-size: 1.2rem;
+        color: rgb(12, 25, 54);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .partners h3 b{
+        margin-right: 10px;
+    } 
+
+    .partners p{
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+    
+    .p-images{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    
+    .p-images hr{
+        display: none;
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-container img{
+        display: flex;
+        max-width: 100%;
+    }
+}
+/* end of partners styles */
