@@ -9,6 +9,7 @@
 body{
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    color: rgb(15, 31, 65);
 }
 
 html{
@@ -715,3 +716,113 @@ nav ul li a:hover{
 }
 
 /* end of testimonials styles */
+
+
+/* services section */
+
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.head h3{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.head p{
+    display: flex;
+    margin-top: 30px;
+    width: 70%;
+    line-height: 2;
+    font-size: 1rem;
+    opacity: .8;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.product img{
+    max-width: 100%;
+    display: flex;
+}
+
+.product h3{
+    margin-top: 30px;
+    display: flex;
+}
+
+.product p{
+    font-size: .9rem;
+    opacity: .6;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:991px){
+    #services{
+        display: flex;
+        padding: 50px;
+    }
+    
+    .head{
+        width: 100%;
+    }
+    
+    .head h3{
+        display: flex;
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .head p{
+        width: 100%;
+        line-height: 1.5;
+        font-size: .9rem;
+    }
+    
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .product{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+/* end of services section */
