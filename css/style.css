@@ -458,6 +458,7 @@ nav ul li a:hover{
     flex-direction: column;
     width: 100%;
     padding: 70px;
+    background: rgb(246, 250, 248);
 }
 
 #about h2{
@@ -547,3 +548,170 @@ nav ul li a:hover{
     }
 }
 /* end of about syles */
+
+
+/* testimonials styles */
+
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 30px;
+    padding: 50px;
+    background: url(../asset/img/quotes_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1820px 650px;
+    background-position: -250px;
+    z-index: -1;
+    width: 100%;
+}
+
+.test-intro{
+    display: flex;
+    position: relative;
+    width: 80%;
+}
+
+.test-intro img{
+    position: absolute;
+    max-width: 100%;
+}
+
+.test-intro h3{
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.card{
+    display: flex;
+    z-index: 99;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(209, 203, 203);
+}
+
+.card i{
+    color: rgb(219, 43, 43);
+    font-size: 1.8rem;
+    position: absolute;
+}
+
+.card p{
+    margin-left: 70px;
+    line-height: 2;
+    width: 70%;
+    opacity: .6;
+}
+
+.card  h5{
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+#vumbaca{
+    width: 80%;
+    font-size: .9rem;
+    margin-left: 30px;
+}
+
+#nigel{
+    width: 70%;
+    margin-left: 200px;
+    margin-top: -70px;
+    font-size: .9rem;
+    height: 320px;
+}
+
+#kelly{
+    width: 60%;
+    font-size: .9rem;
+    height: 250px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width:991px){
+    .testimonials{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-gap: 30px;
+        padding: 50px;
+        background: none;
+        width: 100%;
+    }
+
+    .test-intro{
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+    
+    .test-intro img{
+        position: absolute;
+        max-width: 100%;
+        margin-left: -20px;
+    }
+    
+    .test-intro h3{
+        font-size: 1.2rem;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    .card{
+        display: flex;
+        z-index: 99;
+        flex-direction: column;
+        padding: 30px;
+        border: 1px solid rgb(226, 226, 226);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(209, 203, 203);
+    }
+    
+    .card i{
+        color: rgb(219, 43, 43);
+        font-size: 1.8rem;
+        position: relative;
+        left: 50%;
+        margin-bottom: 10px;
+    }
+    
+    .card p{
+        margin-left: 0px;
+        line-height: 2;
+        width: 100%;
+        opacity: .6;
+    }
+    
+    .card  h5{
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    
+    #vumbaca{
+        width: 100%;
+        font-size: .9rem;
+        margin-left: 0px;
+    }
+    
+    #nigel{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: .9rem;
+        height: 350px;
+    }
+    
+    #kelly{
+        width: 100%;
+        font-size: .9rem;
+        height: 250px;
+        margin-left: 0px;
+    }
+
+}
+
+/* end of testimonials styles */
