@@ -826,3 +826,97 @@ nav ul li a:hover{
     }
 }
 /* end of services section */
+
+/* marketing section */
+
+#marketing{
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    background: url(../asset/img/m-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.m-image{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-image img{
+    display: flex;
+}
+
+.m-texts{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.m-texts h3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.m-texts p{
+    margin-top: 30px;
+    opacity: .6;
+}
+
+p i{
+    color: rgb(22, 128, 22);
+}
+
+
+@media screen and (max-width:991px){
+    #marketing{
+        display: flex;
+        padding: 30px;
+        justify-content: space-between;
+        background: none;
+        flex-direction: column;
+    }
+    
+    .m-image{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .m-image img{
+        display: flex;
+        width: 100%;
+    }
+    
+    .m-texts{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .m-texts h3{
+        display: flex;
+        margin-top: 5px;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    
+    .m-texts p{
+        margin-top: 10px;
+        font-size: .9rem;
+    }
+    
+    p i{
+        color: rgb(22, 128, 22);
+    }    
+}
+/* end of marketing section */
