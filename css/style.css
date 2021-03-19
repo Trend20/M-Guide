@@ -11,6 +11,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 span,b{
     color: rgb(219, 43, 43);
 }
@@ -445,3 +449,101 @@ nav ul li a:hover{
     }
 }
 /* end of partners styles */
+
+
+/* about styles */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 70px;
+}
+
+#about h2{
+    font-size: 2.2rem;
+    width: 85%;
+    color: rgb(12, 25, 54);
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.f-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.f-container img{
+    max-width: 50%;
+    display: flex;
+}
+
+.f-container h3{
+    font-size: 1.2rem;
+    color: rgb(12, 25, 54);
+    font-weight: 600;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.f-container p{
+    font-size: 1rem;
+    line-height: 2;
+    margin-top: 30px;
+    opacity: .5;
+}
+
+@media screen and (max-width: 991px){
+    #about{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+    }
+    
+    #about h2{
+        font-size: 1.5rem;
+        width: 100%;
+        color: rgb(12, 25, 54);
+    }
+    
+    .features{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+        margin-top: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .f-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .f-container img{
+        max-width: 50%;
+        display: flex;
+    }
+    
+    .f-container h3{
+        font-size: 1.2rem;
+    }
+    
+    .f-container p{
+        font-size: .9rem;
+    }
+}
+/* end of about syles */
