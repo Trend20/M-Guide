@@ -920,3 +920,127 @@ p i{
     }    
 }
 /* end of marketing section */
+
+/* pricing section  */
+#pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px;
+}
+
+.p-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.p-head h3{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.p-head p{
+    width: 40%;
+    line-height: 2;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.p-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.p-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(218, 214, 214);
+    border-radius: 10px;
+    padding: 0;
+}
+
+.p-card h3{
+    background: rgb(211, 240, 238);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.p-card img{
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+.p-card h1{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+sub{
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+.p-card p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-size: .9rem;
+    line-height: 2;
+    opacity: .8;
+    font-weight: 300;
+}
+
+#align h3{
+    background: rgb(228, 16, 16);
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#align button{
+    background: rgb(228, 16, 16);
+    color: #fff;
+}
+
+#align:hover{
+    border: 2px solid rgb(228, 16, 16);
+}
+
+.card-btn{
+    display: flex;
+    margin-bottom: 30px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(228, 16, 16);
+    background: none;
+    font-weight: 600;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 50px;
+    color: rgb(219, 43, 43);
+    text-transform: capitalize;
+}
+
+/* end of pricing section */
