@@ -1112,6 +1112,7 @@ sub{
     padding: 100px;
     width: 100%;
     justify-content: space-between;
+    background: rgb(246, 250, 248);
 }
 
 #contact-us img{
