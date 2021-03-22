@@ -834,6 +834,9 @@ nav ul li a:hover{
     padding: 100px;
     justify-content: space-between;
     background: url(../asset/img/m-bg.png);
+    background: rgb(246, 250, 248);
+    background-blend-mode: overlay;
+    opacity: 1;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -1021,6 +1024,12 @@ sub{
     color: #fff;
 }
 
+#align button:hover{
+    color: rgb(228, 16, 16);
+    background: #fff;
+    transition: all 0.3 ease-out;
+}
+
 #align:hover{
     border: 2px solid rgb(228, 16, 16);
 }
@@ -1041,6 +1050,11 @@ sub{
     border-radius: 50px;
     color: rgb(219, 43, 43);
     text-transform: capitalize;
+}
+
+.card-btn:hover{
+    background: rgb(228, 16, 16);
+    color: #fff;
 }
 
 @media screen and (max-width: 991px){
@@ -1090,3 +1104,91 @@ sub{
 }
 
 /* end of pricing section */
+
+/* contact us section*/
+
+#contact-us{
+    display: flex;
+    padding: 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#contact-us img{
+    display: flex;
+    max-width: 100%;
+    margin-top: 50px;
+    min-height: 350px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#form h3{
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#form input{
+   padding: 20px;
+   margin-top: -15px;
+   outline: none;
+   border: 1px solid rgb(218, 214, 214);
+   border-radius: 50px;
+   font-size: 1rem;
+}
+
+#submit-btn{
+    padding: 20px;
+    outline: none;
+    width: 50%;
+    color: #fff;
+    background: rgb(228, 16, 16);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 20px 20px 20px rgb(248, 201, 201);
+    border-radius: 50px;
+}
+
+#submit-btn:hover{
+    box-shadow: none;
+}
+
+
+@media screen and (max-width: 991px){
+
+#contact-us{
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+#contact-us img{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#form h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+}
+/* end of contact us section */
