@@ -1043,4 +1043,50 @@ sub{
     text-transform: capitalize;
 }
 
+@media screen and (max-width: 991px){
+    #pricing{
+        display: flex;
+        padding: 50px;
+    }
+    
+    .p-head h3{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .p-head p{
+        width: 100%;
+        font-size: .9rem;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    
+    .p-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        grid-gap: 30px;
+        margin-top: 50px;
+    }
+    
+    .p-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(218, 214, 214);
+        border-radius: 10px;
+        padding: 0;
+    }
+    
+    .p-card h3{
+        background: rgb(211, 240, 238);
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 0px;
+    }
+}
+
 /* end of pricing section */
