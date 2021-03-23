@@ -1321,3 +1321,34 @@ sub{
     font-weight: 400;
 }
 /* end of footer styles */
+
+#myBtn{
+    display: none;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    background-color: rgb(228, 16, 16);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    z-index: 99;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 20px;
+    transition: ease .5s;
+    width: 5%;
+}
+#myBtn:hover{
+    background-color: #555;
+}
+
+@media screen and (max-width:991px){
+    #myBtn{
+        padding: 15px;
+        transition: ease .5s;
+        width: 12%;
+    }
+}
