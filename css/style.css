@@ -873,7 +873,7 @@ nav ul li a:hover{
     opacity: .6;
 }
 
-p i{
+.steps p i{
     color: rgb(22, 128, 22);
 }
 
@@ -918,7 +918,7 @@ p i{
         font-size: .9rem;
     }
     
-    p i{
+    .steps p i{
         color: rgb(22, 128, 22);
     }    
 }
@@ -1105,9 +1105,9 @@ sub{
 
 /* end of pricing section */
 
-/* contact us section*/
+/* guide section*/
 
-#contact-us{
+#guide{
     display: flex;
     padding: 100px;
     width: 100%;
@@ -1115,7 +1115,7 @@ sub{
     background: rgb(246, 250, 248);
 }
 
-#contact-us img{
+#guide img{
     display: flex;
     max-width: 100%;
     margin-top: 50px;
@@ -1164,7 +1164,7 @@ sub{
 
 @media screen and (max-width: 991px){
 
-#contact-us{
+#guide{
     display: flex;
     padding: 50px;
     width: 100%;
@@ -1173,7 +1173,7 @@ sub{
     margin-top: -50px;
 }
 
-#contact-us img{
+#guide img{
     display: flex;
     max-width: 100%;
     align-items: center;
@@ -1192,4 +1192,35 @@ sub{
     margin-top: 20px;
 }
 }
-/* end of contact us section */
+/* end of guide section */
+
+/* contact-us section */
+
+#contact-us{
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.c-text{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.c-text h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.c-text p{
+    margin-top: 30px;
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.c-text p b{
+    margin-right: 20px;
+}
+/* end of contact-us section */
