@@ -1136,7 +1136,7 @@ sub{
 
 #form input{
    padding: 20px;
-   margin-top: -15px;
+   margin-top: 3px;
    outline: none;
    border: 1px solid rgb(218, 214, 214);
    border-radius: 50px;
