@@ -1146,6 +1146,7 @@ sub{
 
 #submit-btn{
     padding: 20px;
+    margin-top: 10px;
     outline: none;
     width: 50%;
     color: #fff;
