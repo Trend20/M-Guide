@@ -349,7 +349,7 @@
         <div class="c-text">
             <h3>Contact Us</h3>
             <p>
-                <b><i class="fas fa-map-marker-alt"></i></b>707 Randolph Street Napa, CA 94559
+                <b><i class="fas fa-map-marker-alt"></i></b>707 Moi Avenue Street, Nairobi Kenya
             </p>
 
             <p><b><i class="fas fa-envelope"></i></b>mail@demolink.org</p>
@@ -358,7 +358,7 @@
         </div>
 
         <div id="map">
-
+              <!-- google maps -->
         </div>
      </div>
 
@@ -377,5 +377,32 @@
             })
         })
     </script>
+
+    <!-- google maps script -->
+
+    <script async
+           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArlQAJp6OiOxgnoauwaUnseG0jXdL1bwQ&callback=initMap">
+    </script>
+
+
+    <script>
+        // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -1.28333,  lng: 36.81667 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+
+    </script>
+    <!-- end of google maps script -->
 </body>
 </html>

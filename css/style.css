@@ -1223,4 +1223,9 @@ sub{
 .c-text p b{
     margin-right: 20px;
 }
+
+#map{
+    width: 100%;
+    height: 400px;
+}
 /* end of contact-us section */
