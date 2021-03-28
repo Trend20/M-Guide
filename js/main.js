@@ -53,4 +53,12 @@ submitBtns.forEach((btn) => {
             }
         })
     }
-})
+});
+
+// add the function to the price cards
+
+const priceCards = document.querySelectorAll('.card-btn');
+
+priceCards.forEach((card) => {
+    card.addEventListener('click', toggleModal);
+});
