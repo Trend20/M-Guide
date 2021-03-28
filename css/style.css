@@ -1434,6 +1434,7 @@ sub {
     width: 100%;
     font-size: .95rem;
     opacity: .5;
+    margin-top: 15px;
 }
 
 .close-button {

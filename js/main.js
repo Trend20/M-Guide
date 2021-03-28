@@ -59,6 +59,7 @@ submitBtns.forEach((btn) => {
 
 const priceCards = document.querySelectorAll('.card-btn');
 
+// loop through the cards
 priceCards.forEach((card) => {
     card.addEventListener('click', toggleModal);
 });
