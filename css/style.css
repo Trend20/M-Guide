@@ -26,6 +26,8 @@ b {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 .hero {
@@ -1381,6 +1383,7 @@ sub {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
+    z-index: 99;
     visibility: hidden;
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
@@ -1392,9 +1395,45 @@ sub {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 1rem 1.5rem;
-    width: 24rem;
+    padding: 2rem 1.5rem;
+    width: 40%;
+    height: auto;
     border-radius: 0.5rem;
+}
+
+.modal-content h3 {
+    width: 100%;
+    margin-left: 80px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.modal-content p {
+    margin-top: 20px;
+    opacity: .5;
+    text-align: center;
+    font-size: .95rem;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field {
+    display: flex;
+    padding: 18px;
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid rgb(202, 202, 202);
+    width: 100%;
+    font-size: .95rem;
+    opacity: .5;
 }
 
 .close-button {
