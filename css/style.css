@@ -284,6 +284,7 @@ nav ul li a:hover {
     }
     .toggle i {
         font-size: 1.3rem;
+        display: block;
     }
 }
 
