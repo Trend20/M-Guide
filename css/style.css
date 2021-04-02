@@ -1326,6 +1326,20 @@ sub {
 #footer p {
     margin-top: 20px;
     font-weight: 400;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:991px) {
+    #footer p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
 }
 
 
