@@ -1,17 +1,17 @@
 // grab the navbar element
-// const navbar = document.getElementById('nav');
-// const toggleBtn = document.querySelector('.toggle');
+const navbar = document.getElementById('nav');
+const toggleBtn = document.querySelector('.toggle');
 
-// toggleBtn.addEventListener('click', showNavbar);
+toggleBtn.addEventListener('click', showNavbar);
 
-// function showNavbar() {
-//     // check fpr the toggle functionality
-//     if (navbar.style.display === 'none') {
-//         navbar.style.display = 'block';
-//     } else {
-//         navbar.style.display = 'none'
-//     };
-// }
+function showNavbar() {
+    // check fpr the toggle functionality
+    if (navbar.style.display === 'none') {
+        navbar.style.display = 'block';
+    } else {
+        navbar.style.display = 'none'
+    };
+}
 
 //Get the button:
 let myButton = document.getElementById("myBtn");
