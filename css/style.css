@@ -1491,7 +1491,7 @@ sub {
     }
     .modal-content h3 {
         width: 100%;
-        margin-left: 80px;
+        margin-left: 0px;
         margin-top: 20px;
         font-weight: 500;
         font-size: 2rem;
