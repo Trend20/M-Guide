@@ -30,7 +30,7 @@
                 </div>
 
                 <!-- navigation bar -->
-                <nav>
+                <nav id="nav">
                     <ul>
                         <li><a href="#about" class="active">About</a></li>
                         <li><a href="#services">Services</a></li>
@@ -393,6 +393,20 @@
 
     </div>
 
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- inline script -->
+    <!-- internal javascript -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.toggle').click(function() {
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+
+
     <!-- google maps script -->
 
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArlQAJp6OiOxgnoauwaUnseG0jXdL1bwQ&callback=initMap">
@@ -420,20 +434,6 @@
         }
     </script>
     <!-- end of google maps script -->
-
-    <!-- JQUERY CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-    <!-- inline script -->
-    <!-- internal javascript -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.toggle').click(function() {
-                $('nav').toggleClass('active')
-            })
-        })
-    </script>
-
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
 </body>
