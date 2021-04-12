@@ -199,7 +199,7 @@ nav ul li a:hover {
 @media screen and (max-width: 991px) {
     .hero {
         background: none;
-        height: 100vh;
+        height: auto;
         width: 100%;
     }
     header {
@@ -452,7 +452,7 @@ nav ul li a:hover {
         align-items: center;
         width: 100%;
         padding: 20px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .partners h3 {
         font-size: 1.5rem;
