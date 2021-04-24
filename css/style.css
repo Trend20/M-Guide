@@ -222,11 +222,11 @@ nav ul li a:hover {
         border: 2px solid rgb(219, 43, 43);
         padding: 20px;
         position: absolute;
-        top: 1%;
+        top: .9%;
         z-index: 1;
         background: #fff;
         left: 5%;
-        display: none;
+        /* display: none; */
     }
     nav.active {
         display: none;
