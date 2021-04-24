@@ -1353,11 +1353,10 @@ sub {
     border: none;
     border-radius: 50%;
     z-index: 99;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #fff;
-    padding: 20px;
+    padding: 20px 25px;
     transition: ease .5s;
-    width: 5%;
 }
 
 #myBtn:hover {
@@ -1366,9 +1365,8 @@ sub {
 
 @media screen and (max-width:991px) {
     #myBtn {
-        padding: 14px;
+        padding: 20px 25px;
         transition: ease .5s;
-        width: 14%;
         bottom: 10px;
     }
 }
