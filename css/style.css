@@ -1368,7 +1368,7 @@ sub {
     #myBtn {
         padding: 14px;
         transition: ease .5s;
-        width: 15%;
+        width: 14%;
         bottom: 10px;
     }
 }
