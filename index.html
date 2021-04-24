@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./asset/favicon_io/favicon.ico" type="image/x-icon">  
     <title>M-Guide</title>
 
     <!-- FONTAWESOME CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" />
+
+
+    <!-- AOS LINK -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -72,7 +77,7 @@
 
             <!-- modal -->
 
-            <div class="modal">
+            <div class="modal" data-aos="fade-down">
                 <div class="modal-content">
                     <span class="close-button">&times;</span>
                     <h3><b>Request </b> a Callback</h3>
@@ -91,7 +96,7 @@
 
             <!-- intro -->
 
-            <div class="intro">
+            <div class="intro" data-aos="fade-down">
                 <h3>Under Pressure To Deliver Better <span>Marketing Results?</span></h3>
                 <p>Experience best-of-breed digital marketing with our multi award-winning team.</p>
                 <button class="intro-btn">Get Started</button>
@@ -102,7 +107,7 @@
 
         <!-- patners section -->
 
-        <div class="partners" id="partners">
+        <div class="partners" id="partners" data-aos="fade-down">
             <h3> <b> We do work </b> with great companies of all sizes.</h3>
             <p>Our focus is on improving your results</p>
 
@@ -132,7 +137,7 @@
 
         <!-- about section -->
 
-        <div id="about">
+        <div id="about" data-aos="fade-up">
             <h2><b>Success </b> today depends more on your people – than ever before</h2>
             <div class="features">
                 <div class="f-container">
@@ -168,7 +173,7 @@
 
         <!-- testimonials -->
 
-        <div class="testimonials" id="testimonials">
+        <div class="testimonials" id="testimonials" data-aos="fade-up">
             <div class="test-intro">
                 <img src="./asset/img/testimonials_bg.png" alt="intro-quotes">
                 <h3> We’d love you to be the next <b>client saying</b> great things about us</h3>
@@ -200,7 +205,7 @@
 
         <!-- services section -->
 
-        <div id="services">
+        <div id="services" data-aos="fade-down">
             <div class="head">
                 <h3>Wherever Your Customers Are, <b> We’ve Got You Covered</b></h3>
                 <p>
@@ -259,7 +264,7 @@
 
         <!-- marketing success -->
 
-        <div id="marketing">
+        <div id="marketing" data-aos="fade-up">
             <div class="m-image">
                 <img src="./asset/img/m-background.png" alt="marketing success">
             </div>
@@ -287,7 +292,7 @@
 
         <!-- pricing section -->
 
-        <div id="pricing">
+        <div id="pricing" data-aos="fade-down">
 
             <div class="p-head">
                 <h3>Choose Your <b>Plan</b></h3>
@@ -333,7 +338,7 @@
 
         <!-- guide section -->
 
-        <div id="guide">
+        <div id="guide" data-aos="fade-up">
             <div class="c-image">
                 <img src="./asset/img/contact-bg.png" alt="contact-image">
             </div>
@@ -356,7 +361,7 @@
 
 
         <!-- contact us -->
-        <div id="contact-us">
+        <div id="contact-us" data-aos="fade-up">
 
             <div class="c-text">
                 <h3>Contact Us</h3>
@@ -377,7 +382,7 @@
         <!-- end of contact us section -->
 
         <!-- footer section -->
-        <div id="footer">
+        <div id="footer" data-aos="fade-down">
             <img src="./asset/img/footerlogo.png" alt="footer logo">
             <div class="social">
                 <i class="fab fa-facebook"></i>
@@ -392,6 +397,15 @@
         <button onclick="topFunction()" id="myBtn"><i class="fas fa-chevron-up"></i></button>
 
     </div>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000,
+        });
+      </script>
 
    <!-- JQUERY CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
