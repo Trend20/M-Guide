@@ -55,20 +55,20 @@ closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
 // validate the input fields
-const inputFields = document.querySelectorAll('.input-field');
-const submitBtns = document.querySelectorAll('submit-btn');
+// const inputFields = document.querySelectorAll('.input-field');
+// const submitBtns = document.querySelectorAll('submit-btn');
 
-submitBtns.forEach((btn) => {
-    btn.addEventListener('click', showError);
+// submitBtns.forEach((btn) => {
+//     btn.addEventListener('click', showError);
 
-    function showError() {
-        inputFields.forEach((field) => {
-            if (field.value == "") {
-                alert('fill in the fields');
-            }
-        })
-    }
-});
+//     function showError() {
+//         inputFields.forEach((field) => {
+//             if (field.value == "") {
+//                 alert('fill in the fields');
+//             }
+//         })
+//     }
+// });
 
 // add the function to the price cards
 
@@ -78,3 +78,25 @@ const priceCards = document.querySelectorAll('.card-btn');
 priceCards.forEach((card) => {
     card.addEventListener('click', toggleModal);
 });
+
+
+// validate the contact form
+
+const contactBtn = document.getElementById('submit-btn');
+const formInputs = document.querySelectorAll('.form-input');
+const form = document.getElementById('form');
+
+form.addEventListener('submit', validateForm);
+
+function validateForm(event){
+    
+    event.preventDefault();
+    formInputs.forEach((input) =>{
+        if(input.value == ""){
+           let alertText= document.createElement('p').innerHTML=`${input.value} field can not be empty!`
+        //    console.log(alertText);
+        form.appendChild(alertText);
+
+        }
+    })
+}

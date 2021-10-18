@@ -74,7 +74,7 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
 }
 
 nav ul li {
@@ -291,7 +291,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     padding: 90px;
-    margin-top: 30px;
+    margin-top: 240px;
     width: 50%;
 }
 
@@ -569,7 +569,6 @@ nav ul li a:hover {
     }
 }
 
-
 /* end of about syles */
 
 
@@ -582,8 +581,8 @@ nav ul li a:hover {
     padding: 50px;
     background: url(../asset/img/quotes_bg.jpg);
     background-repeat: no-repeat;
-    background-size: 1820px 650px;
-    background-position: -250px;
+    background-size: 1950px 600px;
+    background-position: -250px 120px;
     z-index: -1;
     width: 100%;
 }
